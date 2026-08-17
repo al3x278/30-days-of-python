@@ -1,3 +1,5 @@
+# Exercise 2
+
 import sys
 
 print(sys.version)             # Check the python version you are using
