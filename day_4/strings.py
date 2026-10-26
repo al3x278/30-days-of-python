@@ -142,20 +142,38 @@ print(string.strip())  # 'Coding For All'
 # Which one of the following variables return True when we use the method isidentifier():
 # 30DaysOfPython
 # thirty_days_of_python
+challenge_one = '30DaysOfPython'
+print(challenge_one.isidentifier())  # False, because it starts with a number
+challenge_two = 'thirty_days_of_python'
+print(challenge_two.isidentifier())  # True
+
 # The following list contains the names of some of python libraries: ['Django', 'Flask', 'Bottle', 'Pyramid', 'Falcon']. Join the list with a hash with space string.
+names = ['Django', 'Flask', 'Bottle', 'Pyramid', 'Falcon']
+joined_names = '# '.join(names)
+print(joined_names)  # 'Django# Flask# Bottle# Pyramid# Falcon'
 
 # Use the new line escape sequence to separate the following sentences.
 # I am enjoying this challenge.
 # I just wonder what is next.
+string_one = "I am enjoying this challenge"
+string_two = "I just wonder what is next."
+print(string_one + '\n' + string_two)
 
 # Use a tab escape sequence to write the following lines.
 # Name      Age     Country   City
 # Asabeneh  250     Finland   Helsinki
+print("Name\tAge\tCountry\tCity")
+print("Asabeneh\t250\tFinland\tHelsinki")
 
 # Use the string formatting method to display the following:
 # radius = 10
 # area = 3.14 * radius ** 2
 # The area of a circle with radius 10 is 314 meters square.
+radius = 10
+area = 3.14 * radius ** 2
+print("radius = {}".format(radius))
+print("area = {}".format(area))
+print("The area of a circle with radius {} is {} meters square.".format(radius, area))
 
 # Make the following using string formatting methods:
 # 8 + 6 = 14
@@ -165,3 +183,11 @@ print(string.strip())  # 'Coding For All'
 # 8 % 6 = 2
 # 8 // 6 = 1
 # 8 ** 6 = 262144
+
+print("8 + 6 = {}".format(8 + 6))
+print("8 - 6 = {}".format(8 - 6))
+print("8 * 6 = {}".format(8 * 6))
+print("8 / 6 = {:.2f}".format(8 / 6))
+print("8 % 6 = {}".format(8 % 6))
+print("8 // 6 = {}".format(8 // 6))
+print("8 ** 6 = {}".format(8 ** 6))
