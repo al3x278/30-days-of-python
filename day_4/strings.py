@@ -116,12 +116,52 @@ string = 'You cannot end a sentence with because because because is a conjunctio
 first_occurrence = string.find('because')
 last_occurrence = string.rindex('because') + len('because')
 sliced_phrase = string[first_occurrence:last_occurrence]
-string_without_phrase = string.replace(sliced_phrase, '')
-print("Sliced phrase:", sliced_phrase)  # 'because because because'
-# 'You cannot end a sentence with  is a conjunction'
-print("String without phrase:", string_without_phrase)
+print(sliced_phrase)  # because because because
 
 # Find the position of the first occurrence of the word 'because' in the following sentence: 'You cannot end a sentence with because because because is a conjunction'
-
+string = 'You cannot end a sentence with because because because is a conjunction'
+print(string.find('because'))  # 31
 
 # Slice out the phrase 'because because because' in the following sentence: 'You cannot end a sentence with because because because is a conjunction'
+string = 'You cannot end a sentence with because because because is a conjunction'
+first_occurrence = string.find('because')
+last_occurrence = string.rindex('because') + len('because')
+sliced_phrase = string[first_occurrence:last_occurrence]
+print(sliced_phrase)  # because because because
+
+# Does 'Coding For All' start with a substring Coding?
+print('Coding For All'.startswith('Coding'))  # True
+
+# Does 'Coding For All' end with a substring coding?
+print('Coding For All'.endswith('coding'))  # False
+
+# '   Coding For All      '  , remove the left and right trailing spaces in the given string.
+string = '   Coding For All      '
+print(string.strip())  # 'Coding For All'
+
+# Which one of the following variables return True when we use the method isidentifier():
+# 30DaysOfPython
+# thirty_days_of_python
+# The following list contains the names of some of python libraries: ['Django', 'Flask', 'Bottle', 'Pyramid', 'Falcon']. Join the list with a hash with space string.
+
+# Use the new line escape sequence to separate the following sentences.
+# I am enjoying this challenge.
+# I just wonder what is next.
+
+# Use a tab escape sequence to write the following lines.
+# Name      Age     Country   City
+# Asabeneh  250     Finland   Helsinki
+
+# Use the string formatting method to display the following:
+# radius = 10
+# area = 3.14 * radius ** 2
+# The area of a circle with radius 10 is 314 meters square.
+
+# Make the following using string formatting methods:
+# 8 + 6 = 14
+# 8 - 6 = 2
+# 8 * 6 = 48
+# 8 / 6 = 1.33
+# 8 % 6 = 2
+# 8 // 6 = 1
+# 8 ** 6 = 262144
