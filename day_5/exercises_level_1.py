@@ -38,11 +38,12 @@ it_companies.sort()
 # Reverse the list in descending order using reverse() method
 it_companies.reverse()
 # Slice out the first 3 companies from the list
-
+it_companies_first_three = it_companies[:3]
 # Slice out the last 3 companies from the list
-
+it_companies_last_three = it_companies[-3:]
 # Slice out the middle IT company or companies from the list
-
+it_companies_middle = it_companies[len(it_companies) // 2:len(it_companies) // 2 + 1] if len(
+    it_companies) % 2 != 0 else it_companies[len(it_companies) // 2 - 1:len(it_companies) // 2 + 1]
 # Remove the first IT company from the list
 
 # Remove the middle IT company or companies from the list
