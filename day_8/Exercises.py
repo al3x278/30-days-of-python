@@ -34,10 +34,10 @@ print(type(student["skills"]))
 student["skills"].extend(["SQL", "Git"])
 
 # Get the dictionary keys as a list
-print(student.keys())
+print(list(student.keys()))
 
 # Get the dictionary values as a list
-print(student.values())
+print(list(student.values()))
 
 # Change the dictionary to a list of tuples using items() method
 print(list(student.items()))
